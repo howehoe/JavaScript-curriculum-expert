@@ -2,14 +2,13 @@
   "scripts": {
     "check-all": "npm-run-all fix -p lint:css spell-check type-check -s test",
     "check-code": "run-p lint type-check spell-check",
-    "fix": "run-p fix:*",
     "fix-ts-by-eslint": "eslint \"./{src,mock}/**/*.{ts,tsx}\" --fix --max-warnings 0 --cache",
     "fix-ts-by-prettier": "prettier \"./{src,mock}/**/*.{ts,tsx}\" --write --cache",
     "fix:config": "prettier \"./*.{js,json}\" \"./**/*.js\" \"!**/.next\" --write",
     "fix:css": "stylelint \"./src/**/*.{ts,tsx}\" --fix --max-warnings 0 --cache --cache-strategy content",
     "fix:pack": "fixpack",
     "fix:ts": "run-s fix-ts-by-eslint fix-ts-by-prettier",
-    "lint": "run-p lint*",
+    "fix": "run-p fix:*",
     "lint-editorconfig": "editorconfig-checker",
     "lint-ts-by-eslint": "eslint \"./{src,mock}/**/*.{ts,tsx}\" --max-warnings 0 --cache",
     "lint-ts-by-prettier": "prettier \"./{src,mock}/**/*.{ts,tsx}\" --check --cache",
@@ -18,7 +17,9 @@
     "lint:css": "stylelint \"./src/**/*.{ts,tsx}\" --max-warnings 0 --cache --cache-strategy content",
     "lint:pack": "fixpack --dryRun",
     "lint:ts": "run-s lint-ts-by-eslint lint-ts-by-prettier",
+    "lint": "run-p lint*",
     "spell-check": "cspell \"./{src,mock}/**/*.{ts,tsx}\" --no-progress",
+    "start": "react-scripts start",
     "test": "react-scripts test"
   },
   "devDependencies": {

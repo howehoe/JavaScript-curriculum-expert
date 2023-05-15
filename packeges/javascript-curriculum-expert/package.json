@@ -2,14 +2,14 @@
   "scripts": {
     "check-all": "npm-run-all fix -p lint:css spell-check type-check -s test",
     "check-code": "run-p lint type-check spell-check",
-    "fix": "run-p fix:*",
+    "dev": "next dev -p 8080",
     "fix-ts-by-eslint": "eslint \"./{src,mock}/**/*.{ts,tsx}\" --fix --max-warnings 0 --cache",
     "fix-ts-by-prettier": "prettier \"./{src,mock}/**/*.{ts,tsx}\" --write --cache",
     "fix:config": "prettier \"./*.{js,json}\" \"./**/*.js\" \"!**/.next\" --write",
     "fix:css": "stylelint \"./src/**/*.{ts,tsx}\" --fix --max-warnings 0 --cache --cache-strategy content",
     "fix:pack": "fixpack",
     "fix:ts": "run-s fix-ts-by-eslint fix-ts-by-prettier",
-    "lint": "run-p lint*",
+    "fix": "run-p fix:*",
     "lint-editorconfig": "editorconfig-checker",
     "lint-ts-by-eslint": "eslint \"./{src,mock}/**/*.{ts,tsx}\" --max-warnings 0 --cache",
     "lint-ts-by-prettier": "prettier \"./{src,mock}/**/*.{ts,tsx}\" --check --cache",
@@ -18,7 +18,9 @@
     "lint:css": "stylelint \"./src/**/*.{ts,tsx}\" --max-warnings 0 --cache --cache-strategy content",
     "lint:pack": "fixpack --dryRun",
     "lint:ts": "run-s lint-ts-by-eslint lint-ts-by-prettier",
+    "lint": "run-p lint*",
     "spell-check": "cspell \"./{src,mock}/**/*.{ts,tsx}\" --no-progress",
+    "start": "react-scripts start",
     "test": "react-scripts test"
   },
   "devDependencies": {
@@ -37,6 +39,23 @@
     "eslint-plugin-import": "^2.27.5",
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-tsdoc": "^0.2.17",
-    "eslint-plugin-unicorn": "^46.0.0"
+    "eslint-plugin-unicorn": "^46.0.0",
+    "next": "^13.4.2",
+    "normalize.css": "^8.0.1",
+    "react-scripts": "^5.0.1",
+    "typescript": "^5.0.4",
+    "web-vitals": "^3.3.1"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
