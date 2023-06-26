@@ -1,5 +1,20 @@
 import { FC, Fragment } from "react"
 import styled from "styled-components"
+import {
+  Wrapper,
+  TitleWrapper,
+  Title,
+  ContentWrapper,
+  SubTitle,
+  Text,
+  TextWrapper,
+  CheckBoxArea,
+  CheckBoxWrapper,
+  CheckList,
+  CheckBox,
+  CheckBoxText,
+} from "../CommonStyledComponent"
+import { Chapter1 } from "../Chapter1"
 
 export const Introduction: FC = () => (
   <Fragment>
@@ -7,7 +22,7 @@ export const Introduction: FC = () => (
       <TitleWrapper>
         <Title>JavaScript応用カリキュラム</Title>
       </TitleWrapper>
-      <IntroductionWrapper>
+      <ContentWrapper>
         <div>
           <SubTitle>はじめに</SubTitle>
           <TextWrapper>
@@ -37,7 +52,7 @@ export const Introduction: FC = () => (
             </Text>
           </TextWrapper>
         </div>
-      </IntroductionWrapper>
+      </ContentWrapper>
       <CheckBoxArea>
         <SubTitle>受講対象者</SubTitle>
         <CheckBoxWrapper>
@@ -91,15 +106,7 @@ export const Introduction: FC = () => (
       <div>
         <SubTitle>目次</SubTitle>
         <div>
-          <ul>
-            <li>1.関数と変数</li>
-            <li>関数:繰り返し利用するコードを一箇所にまとめる</li>
-            <li>関数の定義方法</li>
-            <li>再帰関数と高階関数</li>
-            <li>関数定義の注意点※thisの立ち振る舞いについて</li>
-            <li>変数と引数</li>
-            <li>スプレッド構文</li>
-          </ul>
+          <Chapter1></Chapter1>
           <ul>2.非同期処理を行うための関数</ul>
           <ul>3.組み込みメソッド</ul>
           <ul>4.ECMAScriptとは</ul>
@@ -108,56 +115,3 @@ export const Introduction: FC = () => (
     </Wrapper>
   </Fragment>
 )
-
-const Wrapper = styled.div`
-  display: grid;
-  place-items: center;
-  width: 100%;
-`
-
-const TitleWrapper = styled.div`
-  align-items: left;
-  display: grid;
-  width: 100%;
-`
-
-const Title = styled.h1`
-  font-size: 40px;
-`
-
-const IntroductionWrapper = styled.div`
-  width: 100%;
-`
-
-const SubTitle = styled.h2`
-  font-size: 25px;
-`
-
-const TextWrapper = styled.div`
-  width: 100%;
-`
-
-const Text = styled.p`
-  font-size: 16px;
-`
-
-const CheckBoxArea = styled.div`
-  width: 100%;
-`
-
-const CheckBoxWrapper = styled.ul`
-  width: 100%;
-`
-
-const CheckList = styled.li`
-  display: flex;
-  align-items: center;
-  height: 25px;
-`
-
-const CheckBox = styled.input``
-
-const CheckBoxText = styled.p`
-  padding-left: 5px;
-  font-size: 16px;
-`
