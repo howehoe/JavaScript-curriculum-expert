@@ -1,4 +1,4 @@
-import { Introduction } from "../../components/初めに"
+import { Introduction } from "../../components/introduction"
 
 const introductionPages = () => {
   return <Introduction />
