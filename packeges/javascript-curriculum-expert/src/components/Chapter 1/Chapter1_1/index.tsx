@@ -6,9 +6,8 @@ import {
   TextWrapper,
   ContentWrapper,
   CodeBlock,
-  CodeBlue,
-  CodeRed,
 } from "../../const/CommonStyledComponent"
+import React from "react"
 
 export const Chapter1_1: FC = () => (
   <Fragment>
@@ -28,21 +27,20 @@ export const Chapter1_1: FC = () => (
           </Text>
           <CodeBlock>
             <pre>
-              <CodeBlue>function</CodeBlue> <CodeRed>関数名</CodeRed>{" "}
-              (引数1,引数2)｛
+              function 関数名 (引数1,引数2)｛
               <br />
               処理
               <br />
-              <CodeBlue>return</CodeBlue> 戻り値
+              return 戻り値
               <br />｝
             </pre>
           </CodeBlock>
           <Text>例えば、次のような関数を定義することができます。</Text>
           <CodeBlock>
             <pre>
-              <CodeBlue>function</CodeBlue> <CodeRed>add</CodeRed> (a,b)｛
+              function add (a,b)｛
               <br />
-              <CodeBlue>return</CodeBlue> a + b;
+              return a + b;
               <br />｝
             </pre>
           </CodeBlock>
@@ -52,9 +50,7 @@ export const Chapter1_1: FC = () => (
             関数を呼び出す場合は、以下のように関数名と引数を指定します。
           </Text>
           <CodeBlock>
-            <pre>
-              <CodeRed>add</CodeRed> (2,3); // 結果は5
-            </pre>
+            <pre>add (2,3); // 結果は5</pre>
           </CodeBlock>
           <Text>
             この例では、add関数に2と3を渡しています。add関数内でそれらを足し合わせた結果、5が返されます。
@@ -66,7 +62,7 @@ export const Chapter1_1: FC = () => (
         </TextWrapper>
       </div>
       <SubTitle>チャレンジ課題</SubTitle>
-      <Text>受け取った引数が偶数か奇数かを判定する関数を作成してください</Text>
+      <p>受け取った引数が偶数か奇数かを判定する関数を作成してください</p>
     </ContentWrapper>
   </Fragment>
 )
