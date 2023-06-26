@@ -13,7 +13,7 @@ import {
   CheckList,
   CheckBox,
   CheckBoxText,
-} from "../CommonStyledComponent"
+} from "../const/CommonStyledComponent"
 import { Chapter1 } from "../Chapter1"
 
 export const Introduction: FC = () => (
