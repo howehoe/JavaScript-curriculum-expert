@@ -11,11 +11,16 @@ export const Chapter1: FC = () => (
         </Link>
       </li>
       <li>
-      <Link href="../Chapter1/Chapter1_2">
+        <Link href="../Chapter1/Chapter1_2">
           <p>1-2:関数の定義方法</p>
         </Link>
-        </li>
-      <li>関数定義の注意点※thisの立ち振る舞いについて</li>
+      </li>
+      <li>
+        <Link href="../Chapter1/Chapter1_3">
+          <p>関数定義の注意点</p>
+        </Link>
+      </li>
+      <li>Thisとは何か</li>
       <li>変数と引数</li>
       <li>スプレッド構文</li>
     </ul>
