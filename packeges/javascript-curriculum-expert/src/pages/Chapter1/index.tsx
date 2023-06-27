@@ -1,4 +1,4 @@
-import { Chapter1 } from "../../components/Chapter1"
+import { Chapter1 } from "../../components/Chapters/Chapter1"
 
 const Chapter1Pages = () => {
   return <Chapter1 />

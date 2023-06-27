@@ -8,7 +8,7 @@ import {
   CodeBlock,
   CodeBlue,
   CodeRed,
-} from "../../const/CommonStyledComponent"
+} from "../../../../const/CommonStyledComponent"
 
 export const Chapter1_1: FC = () => (
   <Fragment>

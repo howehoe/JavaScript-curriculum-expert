@@ -13,8 +13,8 @@ import {
   CheckList,
   CheckBox,
   CheckBoxText,
-} from "../const/CommonStyledComponent"
-import { Chapter1 } from "../Chapter1"
+} from "../../const/CommonStyledComponent"
+import { Chapter1 } from "../Chapters/Chapter1"
 
 export const Introduction: FC = () => (
   <Fragment>
