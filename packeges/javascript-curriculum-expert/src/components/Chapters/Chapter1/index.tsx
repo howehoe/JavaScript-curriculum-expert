@@ -17,7 +17,12 @@ export const Chapter1: FC = () => (
       </li>
       <li>
         <Link href="../Chapter1/Chapter1_3">
-          <p>関数定義の注意点</p>
+          <p>1-3:関数定義の注意点</p>
+        </Link>
+      </li>
+      <li>
+        <Link href="../Chapter1/Chapter1_4">
+          <p>1-4:Thisとは何か</p>
         </Link>
       </li>
       <li>Thisとは何か</li>
