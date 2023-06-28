@@ -25,7 +25,12 @@ export const Chapter1: FC = () => (
           <p>1-4:Thisとは何か</p>
         </Link>
       </li>
-      <li>変数と引数</li>
+      <li>Thisとは何か</li>
+      <li>
+        <Link href="../Chapter1/Chapter1_5">
+          <p>変数と引数</p>
+        </Link>
+      </li>
       <li>スプレッド構文</li>
     </ul>
   </Fragment>
