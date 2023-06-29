@@ -1,7 +1,5 @@
 import { FC, Fragment } from "react"
-import styled from "styled-components"
 import {
-  Wrapper,
   TitleWrapper,
   Title,
   ContentWrapper,
@@ -18,7 +16,7 @@ import {
 import { Chapter1 } from "../Chapters/Chapter1"
 
 export const Introduction: FC = () => (
-  <Root>
+  <Fragment>
     <TitleWrapper>
       <Title>JavaScript応用カリキュラム</Title>
     </TitleWrapper>
@@ -112,5 +110,5 @@ export const Introduction: FC = () => (
         <ul>4.ECMAScriptとは</ul>
       </div>
     </div>
-  </Root>
+  </Fragment>
 )
