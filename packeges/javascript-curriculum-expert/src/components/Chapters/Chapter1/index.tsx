@@ -35,6 +35,11 @@ export const Chapter1: FC = () => (
           <p>1-6:スプレッド構文</p>
         </Link>
       </li>
+      <li>
+        <Link href="../Chapter1/Chapter1_7">
+          <p>1-7:再帰関数と高階関数</p>
+        </Link>
+      </li>
     </ul>
   </Fragment>
 )
