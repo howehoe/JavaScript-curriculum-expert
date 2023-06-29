@@ -1,4 +1,4 @@
-import { FC, Fragment } from "react"
+import { FC } from "react"
 import {
   Title,
   SubTitle,
@@ -8,10 +8,11 @@ import {
   CodeBlock,
   CodeBlue,
   CodeRed,
+  Root,
 } from "../../../../const/CommonStyledComponent"
 
 export const Chapter1_1: FC = () => (
-  <Fragment>
+  <Root>
     <Title>関数:繰り返し利用するコードを一箇所にまとめる</Title>
     <ContentWrapper>
       <div>
@@ -68,5 +69,5 @@ export const Chapter1_1: FC = () => (
       <SubTitle>チャレンジ課題</SubTitle>
       <Text>受け取った引数が偶数か奇数かを判定する関数を作成してください</Text>
     </ContentWrapper>
-  </Fragment>
+  </Root>
 )

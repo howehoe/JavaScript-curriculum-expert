@@ -30,7 +30,11 @@ export const Chapter1: FC = () => (
           <p>1-5:変数と引数</p>
         </Link>
       </li>
-      <li>スプレッド構文</li>
+      <li>
+        <Link href="../Chapter1/Chapter1_6">
+          <p>1-6:スプレッド構文</p>
+        </Link>
+      </li>
     </ul>
   </Fragment>
 )
