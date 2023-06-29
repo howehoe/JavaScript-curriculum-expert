@@ -1,9 +1,14 @@
 import styled from "styled-components"
 
-export const Wrapper = styled.div`
+export const Root = styled.div`
   display: grid;
   place-items: center;
   width: 100%;
+`
+
+export const Wrapper = styled.div`
+  display: grid;
+  place-items: center;
 `
 
 export const TitleWrapper = styled.div`

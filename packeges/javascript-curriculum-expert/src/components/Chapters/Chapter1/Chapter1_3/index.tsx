@@ -1,4 +1,4 @@
-import { FC, Fragment } from "react"
+import { FC } from "react"
 import {
   Title,
   SubTitle,
@@ -8,10 +8,11 @@ import {
   CodeBlock,
   CodeBlue,
   CodeRed,
+  Root,
 } from "../../../../const/CommonStyledComponent"
 
 export const Chapter1_3: FC = () => (
-  <Fragment>
+  <Root>
     <Title>関数定義の注意点</Title>
     <ContentWrapper>
       <SubTitle>関数定義の注意点</SubTitle>
@@ -113,5 +114,5 @@ export const Chapter1_3: FC = () => (
       <Text>作成済みのJSdocを参考に関数を作成してください</Text>
       <Text>作成済みの関数に対してJSDocで関数の説明を作成してください</Text>
     </ContentWrapper>
-  </Fragment>
+  </Root>
 )

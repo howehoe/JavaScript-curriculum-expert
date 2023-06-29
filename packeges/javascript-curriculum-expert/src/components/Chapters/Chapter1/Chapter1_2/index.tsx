@@ -1,4 +1,4 @@
-import { FC, Fragment } from "react"
+import { FC } from "react"
 import {
   Title,
   SubTitle,
@@ -8,10 +8,11 @@ import {
   CodeBlock,
   CodeBlue,
   CodeRed,
+  Root,
 } from "../../../../const/CommonStyledComponent"
 
 export const Chapter1_2: FC = () => (
-  <Fragment>
+  <Root>
     <Title>関数の定義方法</Title>
     <ContentWrapper>
       <SubTitle>関数の定義方法</SubTitle>
@@ -135,5 +136,5 @@ export const Chapter1_2: FC = () => (
         3.アロー関数を使って、引数として与えられた数値の配列の中で最大値を返す関数を作成してください。
       </Text>
     </ContentWrapper>
-  </Fragment>
+  </Root>
 )
