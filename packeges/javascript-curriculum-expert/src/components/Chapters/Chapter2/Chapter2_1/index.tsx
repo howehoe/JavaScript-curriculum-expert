@@ -5,9 +5,6 @@ import {
   Text,
   TextWrapper,
   ContentWrapper,
-  CodeBlock,
-  CodeBlue,
-  CodeRed,
   Root,
 } from "../../../../const/CommonStyledComponent"
 
