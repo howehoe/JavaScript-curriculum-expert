@@ -12,7 +12,7 @@ export const Chapter2: FC = () => (
       </li>
       <li>
         <Link href="../Chapter2/Chapter2_2">
-          <p>2-2:コールバック</p>
+          <p>2-2:コールバック関数</p>
         </Link>
       </li>
       <li>
