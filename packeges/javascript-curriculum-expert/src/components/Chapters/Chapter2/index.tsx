@@ -17,7 +17,7 @@ export const Chapter2: FC = () => (
       </li>
       <li>
         <Link href="../Chapter2/Chapter2_3">
-          <p>1-3:Promiseオブジェクト</p>
+          <p>2-3:Promiseオブジェクト</p>
         </Link>
       </li>
       <li>
