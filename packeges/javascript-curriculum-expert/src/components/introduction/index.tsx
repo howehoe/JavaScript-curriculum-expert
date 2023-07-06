@@ -15,6 +15,7 @@ import {
 } from "../../const/CommonStyledComponent"
 import { Chapter1 } from "../Chapters/Chapter1"
 import { Chapter2 } from "../Chapters/Chapter2"
+import { Chapter3 } from "../Chapters/Chapter3"
 
 export const Introduction: FC = () => (
   <Fragment>
@@ -107,7 +108,7 @@ export const Introduction: FC = () => (
       <div>
         <Chapter1></Chapter1>
         <Chapter2></Chapter2>
-        <ul>3.組み込みメソッド</ul>
+        <Chapter3></Chapter3>
         <ul>4.ECMAScriptとは</ul>
       </div>
     </div>
