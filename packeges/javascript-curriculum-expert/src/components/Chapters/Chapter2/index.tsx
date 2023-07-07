@@ -25,6 +25,11 @@ export const Chapter2: FC = () => (
           <p>2-4:async await構文</p>
         </Link>
       </li>
+      <li>
+        <Link href="../Chapter2/Chapter2_5">
+          <p>2-5:APIを使用したバックエンドとの疎通</p>
+        </Link>
+      </li>
     </ul>
   </Fragment>
 )

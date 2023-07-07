@@ -1,4 +1,4 @@
-import { FC, Fragment } from "react"
+import { FC } from "react"
 import {
   TitleWrapper,
   Title,
@@ -18,7 +18,7 @@ import { Chapter2 } from "../Chapters/Chapter2"
 import { Chapter3 } from "../Chapters/Chapter3"
 
 export const Introduction: FC = () => (
-  <Fragment>
+  <Root>
     <TitleWrapper>
       <Title>JavaScript応用カリキュラム</Title>
     </TitleWrapper>
@@ -109,8 +109,7 @@ export const Introduction: FC = () => (
         <Chapter1></Chapter1>
         <Chapter2></Chapter2>
         <Chapter3></Chapter3>
-        <ul>4.ECMAScriptとは</ul>
       </div>
     </div>
-  </Fragment>
+  </Root>
 )

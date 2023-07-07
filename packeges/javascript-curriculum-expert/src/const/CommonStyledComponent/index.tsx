@@ -1,9 +1,10 @@
 import styled from "styled-components"
 
 export const Root = styled.div`
-  display: grid;
-  place-items: center;
-  width: 100%;
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 30px;
+  padding-bottom: 100px;
 `
 
 export const Wrapper = styled.div`
@@ -26,7 +27,9 @@ export const ContentWrapper = styled.div`
 `
 
 export const SubTitle = styled.h2`
-  font-size: 25px;
+  font-size: 1.75em;
+  line-height: 1.225;
+  border-bottom: 1px solid #eee;
 `
 
 export const TextWrapper = styled.div`
