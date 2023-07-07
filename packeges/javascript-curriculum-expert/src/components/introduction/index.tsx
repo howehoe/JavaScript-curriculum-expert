@@ -15,7 +15,6 @@ import {
 } from "../../const/CommonStyledComponent"
 import { Chapter1 } from "../Chapters/Chapter1"
 import { Chapter2 } from "../Chapters/Chapter2"
-import { Chapter3 } from "../Chapters/Chapter3"
 
 export const Introduction: FC = () => (
   <Root>
@@ -108,7 +107,6 @@ export const Introduction: FC = () => (
       <div>
         <Chapter1></Chapter1>
         <Chapter2></Chapter2>
-        <Chapter3></Chapter3>
       </div>
     </div>
   </Root>
