@@ -40,6 +40,10 @@ export const Text = styled.p`
   font-size: 16px;
 `
 
+export const CustomP = styled.p`
+  font-weight: bold;
+  margin: 0;
+`
 export const CheckBoxArea = styled.div`
   width: 100%;
 `

@@ -87,7 +87,7 @@ export const Chapter1_3: FC = () => (
             <br />
             <CodeBlue>function</CodeBlue> <CodeRed>add</CodeRed> (a, b) ｛
             <br />
-            <CodeBlue>return</CodeBlue> a + b ;
+            &nbsp;<CodeBlue>return</CodeBlue> a + b ;
             <br /> ｝
             <br />
           </pre>

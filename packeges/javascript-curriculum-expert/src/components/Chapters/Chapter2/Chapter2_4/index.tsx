@@ -41,13 +41,14 @@ export const Chapter2_4: FC = () => (
             <CodeBlue>async</CodeBlue> <CodeBlue>function</CodeBlue>{" "}
             <CodeRed>fetchData</CodeRed>() ｛
             <br />
-            <CodeBlue>const</CodeBlue> response = <CodeBlue>await</CodeBlue>{" "}
-            <CodeRed>fetch</CodeRed>('https://api.example.com/data');
+            &nbsp;<CodeBlue>const</CodeBlue> response ={" "}
+            <CodeBlue>await</CodeBlue> <CodeRed>fetch</CodeRed>
+            ('https://api.example.com/data');
             <br />
-            <CodeBlue>const</CodeBlue> data = <CodeBlue>await</CodeBlue>{" "}
+            &nbsp;<CodeBlue>const</CodeBlue> data = <CodeBlue>await</CodeBlue>{" "}
             response.<CodeRed>json</CodeRed>()
             <br />
-            <CodeBlue>return</CodeBlue> data;
+            &nbsp;<CodeBlue>return</CodeBlue> data;
             <br />
             ｝;
           </pre>
@@ -101,19 +102,20 @@ export const Chapter2_4: FC = () => (
               <CodeBlue>function</CodeBlue> <CodeRed>promiseFunction</CodeRed>()
               ｛
               <br />
-              <CodeRed>return</CodeRed> <CodeBlue>new</CodeBlue>{" "}
-              <CodeRed>Promise</CodeRed>((resolve, reject)) =＞｛
+              &nbsp;<CodeRed>return</CodeRed> <CodeBlue>new</CodeBlue>{" "}
+              <CodeRed>Promise</CodeRed>((resolve, reject)) ={">"}｛
               <br />
-              <CodeBlue>try</CodeBlue> ｛
+              &nbsp; &nbsp;<CodeBlue>try</CodeBlue> ｛
               <br />
-              <CodeRed>resolve</CodeRed>("resolve")
-              <br />｝<CodeBlue>catch</CodeBlue> (e) ｛
+              &nbsp; &nbsp; &nbsp;<CodeRed>resolve</CodeRed>("resolve")
               <br />
-              <CodeRed>reject</CodeRed>("reject")
+              &nbsp; &nbsp;｝<CodeBlue>catch</CodeBlue> (e) ｛
               <br />
-              ｝
+              &nbsp; &nbsp; &nbsp;<CodeRed>reject</CodeRed>("reject")
               <br />
-              ｝)
+              &nbsp; &nbsp;｝
+              <br />
+              &nbsp; ｝)
               <br />｝
             </pre>
           </CodeBlock>
@@ -123,14 +125,15 @@ export const Chapter2_4: FC = () => (
               <CodeBlue>async</CodeBlue> <CodeBlue>function</CodeBlue>{" "}
               <CodeRed>asyncFunction</CodeRed>() ｛
               <br />
-              <CodeBlue>try</CodeBlue> ｛
+              &nbsp;<CodeBlue>try</CodeBlue> ｛
               <br />
-              <CodeBlue>return</CodeBlue>("resolve")
-              <br />｝<CodeBlue>catch</CodeBlue> (e) ｛
+              &nbsp; &nbsp;<CodeBlue>return</CodeBlue>("resolve")
               <br />
-              <CodeBlue>throw</CodeBlue>("reject")
+              &nbsp;｝<CodeBlue>catch</CodeBlue> (e) ｛
               <br />
-              ｝
+              &nbsp; &nbsp;<CodeBlue>throw</CodeBlue>("reject")
+              <br />
+              &nbsp;｝
               <br />｝
             </pre>
           </CodeBlock>

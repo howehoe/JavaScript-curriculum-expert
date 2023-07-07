@@ -9,6 +9,7 @@ import {
   CodeBlue,
   CodeRed,
   Root,
+  CustomP,
 } from "../../../../const/CommonStyledComponent"
 
 export const Chapter1_5: FC = () => (
@@ -80,7 +81,7 @@ export const Chapter1_5: FC = () => (
         </Text>
         <TextWrapper>
           <Text>
-            通常の引数
+            <CustomP>通常の引数</CustomP>
             <br />
             最も基本的な引数の渡し方です。以下は、aとbの2つの引数を受け取る関数の例です。
           </Text>
@@ -88,14 +89,14 @@ export const Chapter1_5: FC = () => (
             <pre>
               <CodeBlue>function</CodeBlue> <CodeRed>sum</CodeRed>(a,b) ｛
               <br />
-              <CodeBlue>return</CodeBlue> a + b;
+              &nbsp;<CodeBlue>return</CodeBlue> a + b;
               <br />｝
             </pre>
           </CodeBlock>
         </TextWrapper>
         <TextWrapper>
           <Text>
-            デフォルト引数
+            <CustomP>デフォルト引数</CustomP>
             <br />
             引数に初期値を設定することができます。引数が渡されなかった場合に、初期値が使われます。
           </Text>
@@ -104,14 +105,14 @@ export const Chapter1_5: FC = () => (
               <CodeBlue>function</CodeBlue> <CodeRed>greet</CodeRed>(name =
               "Guest") ｛
               <br />
-              <CodeBlue>return</CodeBlue> Hello $｛name｝!;
+              &nbsp;<CodeBlue>return</CodeBlue> Hello $｛name｝!;
               <br />｝
             </pre>
           </CodeBlock>
         </TextWrapper>
         <TextWrapper>
           <Text>
-            残余引数を使用した可変長引数関数への引数の渡し方
+            <CustomP>残余引数を使用した可変長引数関数への引数の渡し方</CustomP>
             <br />
             JavaScriptにおいて、残余引数（rest
             parameters）を使用すると、関数に可変長の引数を渡すことができます。
@@ -128,11 +129,15 @@ export const Chapter1_5: FC = () => (
               <CodeBlue>function</CodeBlue> <CodeRed>sum</CodeRed>(...numbers)
               ｛
               <br />
-              <CodeBlue>let</CodeBlue> total = 0;
-              <CodeBlue>for</CodeBlue> (let number pf numbers) ｛
+              &nbsp;<CodeBlue>let</CodeBlue> total = 0;
               <br />
-              total += number;
-              <br />｝<CodeBlue>return</CodeBlue> total;
+              &nbsp;<CodeBlue>for</CodeBlue> (let number pf numbers) ｛
+              <br />
+              &nbsp;&nbsp; total += number;
+              <br />
+              &nbsp;｝
+              <br />
+              &nbsp;<CodeBlue>return</CodeBlue> total;
               <br />｝
               <br />
               <br />
@@ -146,7 +151,7 @@ export const Chapter1_5: FC = () => (
         </TextWrapper>
         <TextWrapper>
           <Text>
-            分割代入を用いた引数の受け取り
+            <CustomP>分割代入を用いた引数の受け取り</CustomP>
             <br />
             分割代入を使うことで、複数の引数を一度に受け取ることができます。引数が多い場合や、オブジェクトや配列を受け取る場合に便利です。
           </Text>
@@ -155,12 +160,16 @@ export const Chapter1_5: FC = () => (
               <CodeBlue>function</CodeBlue> <CodeRed>showFullName</CodeRed>(
               ｛firstName, LastName｝) ｛
               <br />
-              console.<CodeRed>log</CodeRed>($｛firstName｝ $｛lastName｝);
+              &nbsp;console.<CodeRed>log</CodeRed>(`$｛firstName｝
+              $｛lastName｝`);
               <br />｝
               <br />
               <br />
-              <CodeRed>showFullName</CodeRed>(｛ firstName: "taro", lastName:
-              "yamada"｝) //taro yamada
+              const <CodeRed>names</CodeRed> = ｛ firstName: "taro", lastName:
+              "yamada" ｝;
+              <br />
+              <CodeRed>showFullName</CodeRed>(<CodeRed>names</CodeRed>) //taro
+              yamada
             </pre>
           </CodeBlock>
         </TextWrapper>

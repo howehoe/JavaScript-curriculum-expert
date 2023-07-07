@@ -61,18 +61,19 @@ export const Chapter1_4: FC = () => (
           <pre>
             <CodeBlue>const</CodeBlue> person = ｛
             <br />
-            firstName: 'John',
+            &nbsp;firstName: 'John',
             <br />
-            lastName: 'Doe',
+            &nbsp;lastName: 'Doe',
             <br />
-            fullName: <CodeBlue>function</CodeBlue>() ｛
+            &nbsp;fullName: <CodeBlue>function</CodeBlue>() ｛
             <br />
-            console.log(this.firstName + ' ' + <CodeBlue>this</CodeBlue>
+            &nbsp;&nbsp;console.log(this.firstName + ' ' + <CodeBlue>this</CodeBlue>
             .lastName);
             <br />
-            ｝
+            &nbsp;｝
             <br />
             ｝;
+            <br />
             <br />
             person.fullName(); // 結果：John Doe
           </pre>
@@ -89,9 +90,10 @@ export const Chapter1_4: FC = () => (
             <CodeBlue>const</CodeBlue> document.<CodeRed>querySelector</CodeRed>
             ('button');
             <br />
+            <br />
             button.<CodeRed>addEventListener</CodeRed>('click' , function() ｛
             <br />
-            console.log(<CodeBlue>this</CodeBlue>);
+            &nbsp;console.log(<CodeBlue>this</CodeBlue>);
             <br />
             ｝);
           </pre>

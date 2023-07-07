@@ -80,32 +80,32 @@ export const Chapter2_5: FC = () => (
         </TextWrapper>
         <CodeBlock>
           <pre>
-            button.addEventListener("click", async function () ｛
+            button.<CodeRed>addEventListener</CodeRed>("click", <CodeBlue>async</CodeBlue> <CodeBlue>function</CodeBlue> () ｛
             <br />
-            try ｛
+            &nbsp;<CodeBlue>try</CodeBlue> ｛
             <br />
-            const response = await fetch(" https://randomuser.me/api/")
+            &nbsp; &nbsp;<CodeBlue>Const</CodeBlue> response = <CodeBlue>await</CodeBlue> fetch(" https://randomuser.me/api/")
             <br />
-            const data = await response.json()
+            &nbsp; &nbsp;<CodeBlue>Const</CodeBlue> data = <CodeBlue>await</CodeBlue> response.<CodeRed>json</CodeRed>()
             <br />
-            const firstData = data.results[0]
+            &nbsp; &nbsp;<CodeBlue>Const</CodeBlue> firstData = data.results[0]
             <br />
-            const firstName = firstData.name.first
+            &nbsp; &nbsp;<CodeBlue>Const</CodeBlue> firstName = firstData.name.first
             <br />
-            const lastName = firstData.name.last
+            &nbsp; &nbsp;<CodeBlue>Const</CodeBlue> lastName = firstData.name.last
             <br />
-            const fullName = `$｛firstName｝ $｛lastName｝`
+            &nbsp; &nbsp;<CodeBlue>Const</CodeBlue> fullName = `$｛firstName｝ $｛lastName｝`
             <br />
             <br />
-            const name = document.getElementById("name")
+            &nbsp; &nbsp;<CodeBlue>Const</CodeBlue> name = document.<CodeRed>getElementById</CodeRed>("name")
             <br />
-            name.textContent = `$｛fullName｝`
+            &nbsp; &nbsp; name.textContent = `$｛fullName｝`
             <br />
-            ｝ catch (error) ｛
+            &nbsp;｝<CodeRed>catch</CodeRed>  (error) ｛
             <br />
-            console.error(error)
+            &nbsp; &nbsp;console.<CodeRed>error</CodeRed>(error)
             <br />
-            ｝
+            &nbsp;｝
             <br />
             ｝)
           </pre>

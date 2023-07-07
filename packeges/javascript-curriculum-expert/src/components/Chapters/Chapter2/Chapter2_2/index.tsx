@@ -46,17 +46,18 @@ export const Chapter2_2: FC = () => (
             <CodeBlue>function</CodeBlue> <CodeRed>fetchData</CodeRed>(callback)
             ｛
             <br />
-            // データの取得を模した非同期処理（例:
+            &nbsp;// データの取得を模した非同期処理（例:
             1秒待ってからデータを取得する）
             <br />
-            <CodeRed>setTimeout</CodeRed>(() =＞ ｛
+            &nbsp;<CodeRed>setTimeout</CodeRed>(() ={">"} ｛
             <br />
-            <CodeBlue>const</CodeBlue> data = ｛ id: 1, name: 'John Doe' ｝;
+            &nbsp; &nbsp;<CodeBlue>const</CodeBlue> data = ｛ id: 1, name: 'John
+            Doe' ｝;
             <br />
-            <CodeRed>callback</CodeRed>(<CodeBlue>null</CodeBlue>, data); //
-            コールバック関数を呼び出して結果を返す
+            &nbsp; &nbsp;<CodeRed>callback</CodeRed>(<CodeBlue>null</CodeBlue>,
+            data); // コールバック関数を呼び出して結果を返す
             <br />
-            ｝, 1000);
+            &nbsp;｝, 1000);
             <br />
             ｝
             <br />
@@ -66,14 +67,16 @@ export const Chapter2_2: FC = () => (
             <CodeBlue>function</CodeBlue> <CodeRed>handleData</CodeRed>(error,
             data) ｛
             <br />
-            if (error) ｛
+            &nbsp;if (error) ｛
             <br />
-            console.<CodeRed>error</CodeRed>('An error occurred:', error);
-            <br />｝ <CodeBlue>else</CodeBlue> ｛
+            &nbsp; &nbsp;console.<CodeRed>error</CodeRed>('An error occurred:',
+            error);
             <br />
-            console.<CodeRed>log</CodeRed>('Data received:', data);
+            &nbsp;｝ <CodeBlue>else</CodeBlue> ｛
             <br />
-            ｝
+            &nbsp; &nbsp;console.<CodeRed>log</CodeRed>('Data received:', data);
+            <br />
+            &nbsp;｝
             <br />
             ｝
             <br />
