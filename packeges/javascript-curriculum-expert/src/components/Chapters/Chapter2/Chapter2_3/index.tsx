@@ -36,13 +36,15 @@ export const Chapter2_3: FC = () => (
         <CodeBlock>
           <pre>
             <CodeBlue>const</CodeBlue> promise = <CodeBlue>new</CodeBlue>{" "}
-            <CodeRed>Promise</CodeRed>((resolve, reject) =＞
-            <br />
+            <CodeRed>Promise</CodeRed>((resolve, reject) ={">"}
             ｛
             <br />
-            // 非同期処理を実行する // 成功時には resolve() を呼び出す //
             <br />
-            エラー時には reject() を呼び出す
+            &nbsp;// 非同期処理を実行する
+            <br />
+            &nbsp;// 成功時には resolve() を呼び出す
+            <br />
+            &nbsp;// エラー時には reject() を呼び出す
             <br />
             ｝);
           </pre>
@@ -82,22 +84,26 @@ export const Chapter2_3: FC = () => (
           </Text>
           <CodeBlock>
             <pre>
-              <CodeRed>reject</CodeRed> (error); promise.<CodeRed>then</CodeRed>
-              (
+              <CodeBlue>const</CodeBlue> promise = new{" "}
+              <CodeRed>Promise</CodeRed>((resolve, reject) ={">"} {"{"}
               <br />
-              (result) =＞ ｛
+              &nbsp;resolve("thenに渡す値");
               <br />
-              // 非同期処理が成功した場合の処理
+              {"}"});
               <br />
-              console.<CodeRed>log</CodeRed>(result);
               <br />
-              ｝,
+              promise.<CodeRed>then</CodeRed>
+              ((result) ={">"} ｛
               <br />
-              (error) =＞ ｛
+              &nbsp;// 非同期処理が成功した場合の処理
               <br />
-              // 非同期処理が失敗した場合の処理
+              &nbsp; console.<CodeRed>log</CodeRed>(result);
               <br />
-              console.<CodeRed>log</CodeRed>(error);
+              ｝,(error) ={">"} ｛
+              <br />
+              &nbsp; // 非同期処理が失敗した場合の処理
+              <br />
+              &nbsp; console.<CodeRed>log</CodeRed>(error);
               <br />
               ｝);
             </pre>

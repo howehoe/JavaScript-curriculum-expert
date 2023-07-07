@@ -6,7 +6,7 @@ import FavoriteIcon from "./IconComponents/FavoriteIcon"
 
 export default function CommonHeader() {
   return (
-    <Fragment>
+    <Root>
       <Header>
         <ContentWrapper>
           <HomeButton></HomeButton>
@@ -16,10 +16,15 @@ export default function CommonHeader() {
           </IconWrapper>
         </ContentWrapper>
       </Header>
-    </Fragment>
+    </Root>
   )
 }
 
+const Root = styled.div`
+  max-width: 860px;
+  margin: 0 auto;
+  padding-inline: 30px;
+`
 const Header = styled.header`
   width: 100%;
   margin-top: 20px;

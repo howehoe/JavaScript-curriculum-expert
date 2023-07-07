@@ -26,9 +26,9 @@ export const Chapter1_2: FC = () => (
             <CodeBlue>function</CodeBlue> <CodeRed>関数名</CodeRed>{" "}
             (引数1,引数2)｛
             <br />
-            処理
+            &nbsp;処理
             <br />
-            <CodeBlue>return</CodeBlue> 戻り値
+            &nbsp;<CodeBlue>return</CodeBlue> 戻り値
             <br />｝
           </pre>
         </CodeBlock>
@@ -43,9 +43,9 @@ export const Chapter1_2: FC = () => (
             <CodeBlue>const</CodeBlue> <CodeRed>関数名</CodeRed> ={" "}
             <CodeBlue>function</CodeBlue> (引数1,引数2)｛
             <br />
-            処理
+            &nbsp;処理
             <br />
-            <CodeBlue>return</CodeBlue> 戻り値
+            &nbsp;<CodeBlue>return</CodeBlue> 戻り値
             <br />｝
           </pre>
         </CodeBlock>
@@ -59,7 +59,7 @@ export const Chapter1_2: FC = () => (
             <CodeBlue>const</CodeBlue> <CodeRed>add</CodeRed> ={" "}
             <CodeBlue>function</CodeBlue> (a,b)｛
             <br />
-            <CodeBlue>return</CodeBlue> a + b;
+            &nbsp;<CodeBlue>return</CodeBlue> a + b;
             <br />｝
             <br />
             <br />
@@ -76,9 +76,9 @@ export const Chapter1_2: FC = () => (
             <CodeBlue>const</CodeBlue> <CodeRed>関数名</CodeRed> = (引数1,引数2)
             ={">"}｛
             <br />
-            処理
+            &nbsp;処理
             <br />
-            <CodeBlue>return</CodeBlue> 戻り値
+            &nbsp;<CodeBlue>return</CodeBlue> 戻り値
             <br />｝
           </pre>
         </CodeBlock>
@@ -91,9 +91,9 @@ export const Chapter1_2: FC = () => (
           <pre>
             (引数1,引数2) ={">"}｛
             <br />
-            処理
+            &nbsp;処理
             <br />
-            <CodeBlue>return</CodeBlue> 戻り値
+            &nbsp;<CodeBlue>return</CodeBlue> 戻り値
             <br />｝
           </pre>
         </CodeBlock>

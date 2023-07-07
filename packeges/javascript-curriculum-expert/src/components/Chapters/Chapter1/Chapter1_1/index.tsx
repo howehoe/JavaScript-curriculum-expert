@@ -32,9 +32,9 @@ export const Chapter1_1: FC = () => (
               <CodeBlue>function</CodeBlue> <CodeRed>関数名</CodeRed>{" "}
               (引数1,引数2)｛
               <br />
-              処理
+              &nbsp;処理
               <br />
-              <CodeBlue>return</CodeBlue> 戻り値
+              &nbsp;<CodeBlue>return</CodeBlue> 戻り値
               <br />｝
             </pre>
           </CodeBlock>
@@ -43,7 +43,7 @@ export const Chapter1_1: FC = () => (
             <pre>
               <CodeBlue>function</CodeBlue> <CodeRed>add</CodeRed> (a,b)｛
               <br />
-              <CodeBlue>return</CodeBlue> a + b;
+              &nbsp;<CodeBlue>return</CodeBlue> a + b;
               <br />｝
             </pre>
           </CodeBlock>

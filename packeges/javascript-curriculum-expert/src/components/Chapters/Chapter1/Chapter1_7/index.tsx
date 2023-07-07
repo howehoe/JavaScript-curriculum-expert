@@ -26,14 +26,16 @@ export const Chapter1_7: FC = () => (
           <pre>
             <CodeBlue>function</CodeBlue> <CodeRed>functional</CodeRed>(n) ｛
             <br />
-            if (n ＜= 1) ｛
+            &nbsp;if (n {"<"}= 1) ｛
             <br />
-            <CodeBlue>return</CodeBlue> 1; ｝ <CodeBlue>else</CodeBlue>｛
+            &nbsp;&nbsp;<CodeBlue>return</CodeBlue> 1;
             <br />
-            <CodeBlue>return</CodeBlue> n * <CodeRed>functional</CodeRed>(n -
-            1);
+            &nbsp;｝ <CodeBlue>else</CodeBlue>｛
             <br />
-            ｝
+            &nbsp;&nbsp;<CodeBlue>return</CodeBlue> n *{" "}
+            <CodeRed>functional</CodeRed>(n - 1);
+            <br />
+            &nbsp;｝
             <br />｝
           </pre>
         </CodeBlock>
@@ -54,7 +56,10 @@ export const Chapter1_7: FC = () => (
         <Text>
           高階関数は、関数を引数として受け取り、または関数を返す関数のことを指します。
           <br />
-          JavaScriptでは、関数を第一級オブジェクトとして扱えるため、高階関数を簡単に実装することができます。
+          JavaScriptでは、関数を第一級オブジェクトとして扱えるため、変数に格納したり引数や戻り値として指定して高階関数を簡単に実装することができます。
+          <br />
+          Javascriptで普段お世話になるような下記の関数(forEach, map,
+          filter...)もみんな、高階関数です。
           <br />
           例えば、以下のような高階関数を考えることができます。
         </Text>
@@ -63,16 +68,25 @@ export const Chapter1_7: FC = () => (
             <CodeBlue>function</CodeBlue> <CodeRed>multiplyBy</CodeRed>(factor)
             ｛
             <br />
-            <CodeBlue>return</CodeBlue> function (number) ｛
+            &nbsp;<CodeBlue>return</CodeBlue> function (number) ｛
             <br />
-            <CodeBlue>return</CodeBlue> number * factor;
+            &nbsp; &nbsp;<CodeBlue>const</CodeBlue> total = number * factor;
             <br />
-            ｝
+            &nbsp; &nbsp;console.<CodeRed>log</CodeRed>(total)
+            <br />
+            &nbsp;｝
             <br />｝
+            <br />
+            <br />
+            <CodeRed>multiplyBy</CodeRed>(3)(4) //結果は12
           </pre>
         </CodeBlock>
         <Text>
           この高階関数multiplyByは、数値を引数として受け取り、その数値を指定された係数で乗算して返す関数を返します。
+          <br />
+          つまり「「numberを引数に取る新しい関数」を返す関数」になります。
+          <br />
+          "(~~)"を2回連続してつなげているのは、引数を1つ適用して返ってきた関数に、さらに引数を渡しているからです。
           <br />
           以下は、この高階関数を使って新しい関数を生成し、それを使って計算する例です。
         </Text>
@@ -81,8 +95,13 @@ export const Chapter1_7: FC = () => (
             <CodeBlue>const</CodeBlue> double = <CodeRed>multiplyBy</CodeRed>(2)
             // 係数が2の場合の関数を生成
             <br />
+            <CodeBlue>const</CodeBlue> triple = <CodeRed>multiplyBy</CodeRed>(3)
+            // 係数が2の場合の関数を生成
+            <br />
             <br />
             console.log(<CodeRed>double</CodeRed>(5)) // 結果は10
+            <br />
+            console.log(<CodeRed>triple</CodeRed>(5)) // 結果は15
           </pre>
         </CodeBlock>
         <Text>
@@ -97,6 +116,14 @@ export const Chapter1_7: FC = () => (
           このように、高階関数を使うことで、関数を動的に生成して利用することができます。
           <br />
           また、高階関数は関数の再利用性を高め、コードの簡潔さを保つことができます。
+        </Text>
+      </TextWrapper>
+      <TextWrapper>
+        <SubTitle>チャレンジ課題</SubTitle>
+        <Text>
+          再帰関数を使って、引数xに対して、xが偶数の場合はxを2で割り、奇数の場合はxに3をかけて1を足します。
+          <br />
+          この操作を繰り返して初期のxに戻るまでの回数を再帰関数をconsole.logで表示させてください
         </Text>
       </TextWrapper>
     </ContentWrapper>
