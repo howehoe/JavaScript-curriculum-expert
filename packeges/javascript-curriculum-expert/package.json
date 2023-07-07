@@ -2,7 +2,11 @@
   "scripts": {
     "check-all": "npm-run-all fix -p lint:css spell-check type-check -s test",
     "check-code": "run-p lint type-check spell-check",
-    "dev": "next dev -p 8080",
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "export": "next export",
     "fix-ts-by-eslint": "eslint \"./{src,mock}/**/*.{ts,tsx}\" --fix --max-warnings 0 --cache",
     "fix-ts-by-prettier": "prettier \"./{src,mock}/**/*.{ts,tsx}\" --write --cache",
     "fix:config": "prettier \"./*.{js,json}\" \"./**/*.js\" \"!**/.next\" --write",
@@ -18,9 +22,7 @@
     "lint:css": "stylelint \"./src/**/*.{ts,tsx}\" --max-warnings 0 --cache --cache-strategy content",
     "lint:pack": "fixpack --dryRun",
     "lint:ts": "run-s lint-ts-by-eslint lint-ts-by-prettier",
-    "lint": "run-p lint*",
     "spell-check": "cspell \"./{src,mock}/**/*.{ts,tsx}\" --no-progress",
-    "start": "react-scripts start",
     "test": "react-scripts test"
   },
   "devDependencies": {
